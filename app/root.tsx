@@ -9,7 +9,6 @@ import {
 import type { Route } from './+types/root';
 import './app.css';
 
-
 // biome-ignore lint/correctness/noEmptyPattern: <explanation>
 export const meta = ({}: Route.MetaArgs) => {
   return [
@@ -31,7 +30,6 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -49,7 +47,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
     </html>
   );
 }
-
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   let message = 'Oops!';

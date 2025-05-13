@@ -1,4 +1,4 @@
-import type { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfig } from '@storybook/react-vite';
 
 const config: StorybookConfig = {
   stories: ['../app/**/*.mdx', '../app/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -14,7 +14,7 @@ const config: StorybookConfig = {
     '@storybook/addon-interactions',
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: '@storybook/react-vite',
     options: {
       builder: {
         viteConfigPath: 'vite-storybook.config.ts',
